@@ -10,7 +10,8 @@
     "test": "tape test/*.js",
     "lint": "eslint **/*.js",
     "lint-html": "eslint **/*.js -f html -o ./reports/lint-results.html",
-    "lint-fix": "eslint --fix **/*.js"
+    "lint-fix": "eslint --fix **/*.js",
+    "export" : "export LD_LIBRARY_PATH=/usr/local/ffmpeg/lib"
   },
   "repository": {
     "type": "git",
