@@ -17,20 +17,23 @@
           "-fno-rtti",
           "-fno-exceptions"
         ],
+        "include_dirs" : [
+          "/usr/local/ffmpeg/include",
+        ],
         "cflags_cc": [
           "-std=c++11",
           "-fexceptions"
         ],
         "link_settings": {
           "libraries": [
-            "-lavcodec",
-            "-lavdevice",
-            "-lavfilter",
-            "-lavformat",
-            "-lavutil",
-            "-lpostproc",
-            "-lswresample",
-            "-lswscale"
+            "/usr/local/ffmpeg/lib/libavcodec.so",
+            "/usr/local/ffmpeg/lib/libavdevice.so",
+            "/usr/local/ffmpeg/lib/libavfilter.so",
+            "/usr/local/ffmpeg/lib/libavformat.so",
+            "/usr/local/ffmpeg/lib/libavutil.so",
+            "/usr/local/ffmpeg/lib/libpostproc.so",
+            "/usr/local/ffmpeg/lib/libswresample.so",
+            "/usr/local/ffmpeg/lib/libswscale.so"
           ]
         }
       }],
@@ -75,4 +78,4 @@
     }]
   ]
 }]
-}
+
